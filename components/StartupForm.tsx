@@ -19,11 +19,10 @@ const StartupForm = () => {
     const { toast } = useToast();
     const router = useRouter();
 
-    toast ({
-        title: 'Error',
-        description: 'an unexpected error as occured',
-        variant: 'destructive',
-    });
+    // toast ({
+    //     title: "Success",
+    //     description: "Your startup pitch has been created successfully",
+    // });
 
 
     const handleSubmit = async (prevState: any, formData: FormData) => {
