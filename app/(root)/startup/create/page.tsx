@@ -1,11 +1,12 @@
 import { auth } from '@/auth';
 import StartupForm from '@/components/StartupForm'
+import { redirect } from 'next/navigation';
 import React from 'react'
 
 const page = async () => {
   const session = await auth();
 
-  if(!session) return ('/');
+  if(!session) redirect ('/');
 
 
   return (
